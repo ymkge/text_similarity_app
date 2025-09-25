@@ -36,8 +36,7 @@ pip install -r requirements.txt
 このアプリはGoogleスプレッドシートに計算結果を保存するため、Google Cloud Platformのサービスアカウント認証情報が必要です。
 
 1.  Google Cloudコンソールでサービスアカウントを作成し、キー（JSONファイル）をダウンロードします。
-2.  プロジェクトルートに `.streamlit` ディレクトリを作成します。
-3.  `.streamlit/secrets.toml` ファイルを作成し、以下の内容を記述します。
+2.  `.streamlit/secrets.toml.sample` をコピーして、`.streamlit/secrets.toml` ファイルを作成し、以下の内容を記述します。
 
     ```toml
     # .streamlit/secrets.toml
