@@ -17,6 +17,14 @@ def calculate_similarity(text1, text2):
 
 # Function to connect to Google Sheets
 def get_gsheet():
+    st.write("Debug: st.secrets content:", st.secrets) # 追加
+    # spreadsheet_id が直接アクセスできるか確認
+    if "spreadsheet_id" in st.secrets:
+        st.write("Debug: spreadsheet_id found in st.secrets!")
+        st.write("Debug: spreadsheet_id value:", st.secrets["spreadsheet_id"])
+    else:
+        st.write("Debug: spreadsheet_id NOT found in st.secrets!")
+
     creds = Credentials.from_service_account_info(
         st.secrets["gcp_service_account"],
         scopes=["https://www.googleapis.com/auth/spreadsheets"],
