@@ -1,4 +1,5 @@
 # テキスト類似度計算アプリ
+<img width="766" height="518" alt="スクリーンショット 2025-09-25 19 13 27" src="https://github.com/user-attachments/assets/28de1ed5-f186-4dd5-9eb1-53cb7e188a03" />
 
 ## 概要
 
